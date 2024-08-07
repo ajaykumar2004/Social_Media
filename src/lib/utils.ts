@@ -25,7 +25,7 @@ export function formatDateString(dateString: string) {
   return `${formattedDate} at ${time}`;
 }
 
-// 
+// converting time to hours go or days ago
 export const multiFormatDateString = (timestamp: string = ""): string => {
   const timestampNum = Math.round(new Date(timestamp).getTime() / 1000);
   const date: Date = new Date(timestampNum * 1000);
